@@ -22,8 +22,8 @@ body {
       color: #fff;
   }
   .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
+      /*padding-top: 10px;
+      padding-bottom: 10px;*/
   }
   .navbar {
       padding-top: 15px;
