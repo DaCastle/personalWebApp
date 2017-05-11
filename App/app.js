@@ -1,10 +1,16 @@
 (function () {
     "use strict";
 
-    var homePage = angular.module('homePage', []);
+    var ngModule = angular.module('ngModule', []);
 
-    homePage.controller('homeController', ['$scope',
+    angular.module('ngModule').directive('navBar', function() {
+      return {
+        templateUrl: 'navbar.html'
+      };
+    });
+
+    ngModule.controller('ngController', ['$scope',
         function ($scope) {
-          $scope.pleaseWork = "AngularJS $scope working";
+          $scope.whoAmI = "I'm a coffee";
         }]);
 })();
